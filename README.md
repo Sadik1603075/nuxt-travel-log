@@ -1,6 +1,6 @@
 # Nuxt Travel Log
 
-Using the log users able to pin travel location on the world map. 
+Using the log users able to pin travel location on the world map.
 
 ## Setup
 
