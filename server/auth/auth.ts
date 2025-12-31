@@ -5,6 +5,7 @@ import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { createAuthMiddleware } from "better-auth/plugins";
 
 import db from "../db";
+import * as authSchema from "../db/schema/auth";
 import env from "../env/env";
 
 export type UserWithId = Omit<User, "id"> & {
@@ -14,6 +15,7 @@ export type UserWithId = Omit<User, "id"> & {
 export const auth = betterAuth({
   database: drizzleAdapter(db, {
     provider: "sqlite",
+    schema: authSchema,
   }),
 
   socialProviders: {
