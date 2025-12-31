@@ -7,7 +7,7 @@
     </div>
     <div class="navbar-end">
       <AppThemeToggle />
-      Sign In
+      <AuthButton />
     </div>
   </div>
 </template>
