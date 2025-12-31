@@ -9,7 +9,7 @@ import * as authSchema from "../db/schema/auth";
 import env from "../env/env";
 
 export type UserWithId = Omit<User, "id"> & {
-  id: number;
+  id: string;
 };
 
 export const auth = betterAuth({
